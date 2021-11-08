@@ -7,12 +7,10 @@ Please read this entire readme before doing anything.
 
 ### Getting data:
 1. Check you have all the requirements installed.
-2. Create a `.env` file with the following content:
+2. Change the Facebook link in `.env` to your username:
 ```env
-CHROME_DRIVER_PATH="/home/you/path/to/the/chromedriver"
 FRIENDS_LIST="https://www.facebook.com/yourUsername/friends"
 ```
-You can get a Chrome driver on https://chromedriver.chromium.org/downloads and make sure you have a username on Facebook.
 3. Run `python facebook.py`.
 4. Log in to Facebook in the pop up window, then go back to the terminal and press enter.
 
@@ -32,7 +30,6 @@ You can get a Chrome driver on https://chromedriver.chromium.org/downloads and m
 - Selenium: `pip install Selenium`
 - TQDM: `pip install tqdm`
 - DotEnv: `pip install python-dotenv`
-- Driver according to your Chrome version and OS: https://chromedriver.chromium.org/downloads
 - Gephi, unless you have some other plan for drawing your graph
 
 ## More info:
