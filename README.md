@@ -1,7 +1,15 @@
 # Facebook friend network
 
-Please make an issue if it is not working for you! I'll do my best to help :)
-Please read this entire readme before doing anything.
+Facebook friend network forked from [here](https://github.com/JupiLogy/facebook-friend-network).
+## Requirements:
+- Chrome browser
+- Selenium
+- TQDM
+- DotEnv
+- Webdriver Manager
+- Gephi, unless you have some other plan for drawing your graph
+
+Install command: `pip install Selenium python-dotenv tqdm webdriver-manager`
 
 ## How to use:
 
@@ -11,26 +19,19 @@ Please read this entire readme before doing anything.
 ```env
 FRIENDS_LIST="https://www.facebook.com/yourUsername/friends"
 ```
-3. Run `python facebook.py`.
+3. Run facebook.py.
 4. Log in to Facebook in the pop up window, then go back to the terminal and press enter.
 
-### Constructing Graph
+### Constructing Graph Using Gephi
 1. Once it has finished, open Gephi and click `new project`.
 2. Go to `Data Laboratory`, then `edges`. Now, `import spreadsheet`. Select `facebook.csv`.
-3. Go to `Overview`. Choose the `Force Atlas` layout and press play.
+3. Go to `Overview`. Choose the layout and press play.
 4. Just kinda play around with Gephi until you get something you like :) you can even colour nodes.
 
 ### Saving Graph
 1. Go to `preview` to make sure you like how it looks.
 2. `File > Export >` whatever filetype you want.
 3. Finally you can go to an image editor to draw labels and stuff.
-
-## Requirements:
-- Chrome browser
-- Selenium: `pip install Selenium`
-- TQDM: `pip install tqdm`
-- DotEnv: `pip install python-dotenv`
-- Gephi, unless you have some other plan for drawing your graph
 
 ## More info:
 Currently does not detect facebook friends who do not have usernames.
